@@ -1,0 +1,118 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Lato", sans-serif;
+  font-size: 10px;
+}
+body {
+  font-size: 1.8rem;
+}
+/* code blocks styling */
+code {
+  font-family: "Courier New", Courier, monospace;
+}
+.block-code {
+  display: block;
+  background: #eee;
+  border-left: 6px solid rgba(0, 0, 255, 0.75);
+  padding: 15px;
+}
+.inline-code {
+  display: inline;
+  background: #eee;
+  border-bottom: 1.5px solid rgba(0, 0, 255, 0.75);
+}
+/* navbar styling */
+#navbar {
+  border: 5px solid black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 345px;
+  width: 215px;
+}
+#navbar header {
+  height: 65px;
+  margin: 10px;
+  text-align: center;
+}
+#navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#navbar ul li {
+  text-align: center;
+  background: lightgrey;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  height: 50px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+/* main section styling */
+main {
+  margin-left: 215px;
+}
+ol,
+ul {
+  margin-left: 60px;
+}
+.main-section {
+  text-align: justify;
+  border: 5px solid black;
+  margin: 30px;
+  padding: 30px;
+}
+.header {
+  font-size: 2.7rem;
+  font-weight: 700;
+}
+.subheader {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 650px) {
+  body {
+    font-size: 1.6rem;
+  }
+  #navbar {
+    font-size: 1rem;
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    border-left: hidden;
+    border-right: hidden;
+    border-top: hidden;
+    border-bottom: 1.25px solid black;
+  }
+  #navbar header {
+    height: 35px;
+  }
+  #navbar ul li {
+    height: 51px;
+  }
+  main {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .main-section {
+    width: 100%;
+    margin: 0;
+    border-left: hidden;
+    border-right: hidden;
+    border-top: 2.5px solid black;
+    border-bottom: 1.25px solid black;
+  }
+}

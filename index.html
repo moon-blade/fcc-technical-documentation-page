@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Technical Documentation Page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav id="navbar">
+      <header class="header">HTML Documentation</header>
+      <ul>
+        <li><a href="#So_what_is_HTML?" class="nav-link subheader">So what is HTML?</a></li>
+        <li><a href="#Images" class="nav-link subheader">Images</a></li>
+        <li><a href="#Marking_up_text" class="nav-link subheader">Marking up text</a></li>
+        <li><a href="#Links" class="nav-link subheader">Links</a></li>
+        <li><a href="#Reference" class="nav-link subheader">Reference</a></li>
+      </ul>
+      
+    </nav>
+    <main id="main-doc">
+      <!-- section 1 -->
+      <section class="main-section" id="So_what_is_HTML?">
+        <header class="header">So what is HTML?</header>
+        <p>
+          HTML is not a programming language; it is a markup language that
+          defines the structure of your content. HTML consists of a series of
+          elements, which you use to enclose, or wrap, different parts of the
+          content to make it appear a certain way, or act a certain way. The
+          enclosing tags can make a word or image hyperlink to somewhere else,
+          can italicize words, can make the font bigger or smaller, and so on.
+          For example, take the following line of content:
+        </p>
+        <code class="block-code">My cat is very grumpy</code>
+        <p>
+          If we wanted the line to stand by itself, we could specify that it is
+          a paragraph by enclosing it in paragraph tags:
+        </p>
+        <code class="block-code">&ltp&gtMy cat is very grumpy&lt/p&gt</code>
+      </section>
+      <!-- section 2 -->
+      <section class="main-section" id="Images">
+        <header class="header">Images</header>
+        <p>
+          Let's turn our attention to the
+          <code class="inline-code">&ltimg&gt</code> element again:
+        </p>
+        <code class="block-code"
+          >&ltimg src="images/firefox-icon.png" alt="My test image"&gt</code
+        >
+        <p>
+          As we said before, it embeds an image into our page in the position it
+          appears. It does this via the
+          <code class="inline-code">src</code> (source) attribute, which
+          contains the path to our image file.
+        </p>
+        <p>
+          We have also included an
+          <code class="inline-code">alt</code> (alternative) attribute. In this
+          attribute, you specify descriptive text for users who cannot see the
+          image, possibly because of the following reasons:
+        </p>
+
+        <ol>
+          <li>
+            They are visually impaired. Users with significant visual
+            impairments often use tools called screen readers to read out the
+            alt text to them.
+          </li>
+          <li>
+            Something has gone wrong causing the image not to display. For
+            example, try deliberately changing the path inside your src
+            attribute to make it incorrect.
+          </li>
+        </ol>
+
+        <p>
+          The keywords for alt text are "descriptive text". The alt text you
+          write should provide the reader with enough information to have a good
+          idea of what the image conveys. In this example, our current text of
+          "My test image" is no good at all. A much better alternative for our
+          Firefox logo would be "The Firefox logo: a flaming fox surrounding the
+          Earth."
+        </p>
+      </section>
+      <!-- section 3 -->
+      <section class="main-section" id="Marking_up_text">
+        <header class="header">Marking up text</header>
+        <h1 class="subheader">Headings</h1>
+        <p>
+          Heading elements allow you to specify that certain parts of your
+          content are headings — or subheadings. In the same way that a book has
+          the main title, chapter titles, and subtitles, an HTML document can
+          too. HTML contains 6 heading levels,
+          <code class="inline-code">&lth1&gt</code>–<code class="inline-code"
+            >&lth6&gt</code
+          >, although you'll commonly only use 3 to 4 at most:
+        </p>
+        <pre><code class="block-code">&lth1&gtMy main title&lt/h1&gt
+&lth2&gtMy top level heading&lt/h2&gt
+&lth3&gtMy subheading&lt/h3&gt
+&lth4&gtMy sub-subheading&lt/h4&gt</code></pre>
+        <h1 class="subheader">Paragraphs</h1>
+        <p>
+          As explained above, <code class="inline-code">&ltp&gt</code> elements
+          are for containing paragraphs of text; you'll use these frequently
+          when marking up regular text content:
+        </p>
+        <code class="block-code"
+          >&ltp&gtThis is a single paragraph&lt/p&gt</code
+        >
+      </section>
+      <!-- section 4 -->
+      <section class="main-section" id="Links">
+        <header class="header">Links</header>
+        <p>
+          Links are very important — they are what makes the web a web! To add a
+          link, we need to use a simple element —
+          <code class="inline-code">&lta&gt</code> — "a" being the short form
+          for "anchor". To make text within your paragraph into a link, follow
+          these steps:
+        </p>
+        <ol>
+          <li>Choose some text. We chose the text "Mozilla Manifesto".</li>
+          <li>
+            Wrap the text in an
+            <code class="inline-code">&lta&gt</code> element, as shown below:
+          </li>
+          <li>
+            Give the <code class="inline-code">&lta&gt</code> element an href
+            attribute, as shown below:
+            <code class="block-code"
+              >&lta href="">Mozilla Manifesto&lt/a&gt</code
+            >
+          </li>
+          <li>
+            Fill in the value of this attribute with the web address that you
+            want the link to link to:
+            <code class="block-code"
+              >&lta
+              href="https://www.mozilla.org/en-US/about/manifesto/"&gtMozilla
+              Manifesto&lt/a&gt</code
+            >
+          </li>
+        </ol>
+        <p></p>
+      </section>
+      <!-- section 5 -->
+      <section class="main-section" id="Reference">
+        <header class="header">Reference</header>
+        <ul>
+          <li>All the documentation in this page is taken from
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank"
+            >MDN.</li>
+        </ul>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
