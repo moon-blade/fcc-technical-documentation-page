@@ -12,6 +12,7 @@ html {
 }
 body {
   font-size: 1.8rem;
+  background: #a3cfcd;
 }
 /* code blocks styling */
 code {
@@ -20,16 +21,18 @@ code {
 .block-code {
   display: block;
   background: #eee;
-  border-left: 6px solid rgba(0, 0, 255, 0.75);
+  border-left: 6px solid #4b4a54;
   padding: 15px;
 }
 .inline-code {
   display: inline;
   background: #eee;
-  border-bottom: 1.5px solid rgba(0, 0, 255, 0.75);
+  border-bottom: 1.5px solid #4b4a54;
 }
 /* navbar styling */
 #navbar {
+  background: #82a0aa;
+
   border: 5px solid black;
   position: fixed;
   top: 0;
@@ -68,6 +71,7 @@ ul {
   margin-left: 60px;
 }
 .main-section {
+  background: #82a0aa;
   text-align: justify;
   border: 5px solid black;
   margin: 30px;
